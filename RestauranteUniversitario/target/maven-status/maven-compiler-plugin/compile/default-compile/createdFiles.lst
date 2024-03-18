@@ -1,5 +1,6 @@
-food\Dish.class
-values\DishType.class
+com\mycompany\restauranteuniversitario\food\Menu.class
+com\mycompany\restauranteuniversitario\customer\Customer.class
+com\mycompany\restauranteuniversitario\food\Dish.class
+com\mycompany\restauranteuniversitario\values\DishType.class
 com\mycompany\restauranteuniversitario\RestauranteUniversitario.class
-customer\Customer.class
-values\CustomerRole.class
+com\mycompany\restauranteuniversitario\values\CustomerRole.class

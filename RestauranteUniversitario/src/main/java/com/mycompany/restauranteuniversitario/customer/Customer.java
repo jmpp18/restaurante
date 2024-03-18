@@ -1,6 +1,6 @@
-package customer;
+package com.mycompany.restauranteuniversitario.customer;
 
-import values.CustomerRole;
+import com.mycompany.restauranteuniversitario.values.CustomerRole;
 
 public class Customer {
 
