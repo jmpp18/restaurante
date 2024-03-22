@@ -22,15 +22,33 @@ public class Menu {
         this.dishList.add(dish);
     }
 
-    public ArrayList<Dish> getDishesPerType(DishType dishType) {
-        ArrayList<Dish> foundDishes = new ArrayList<>();
+    public ArrayList<String> getDishesPerType(DishType dishType) {
+        ArrayList<String> foundDishes = new ArrayList<>();
 
         for (Dish dish : dishList) {
-            if (dish.getType() == dishType) {
-                foundDishes.add(dish);
+            if (dish.getType() == dishType && dish.getQuantity() > 0) {
+                foundDishes.add(dish.getName());
             }
 
         }
         return foundDishes;
+    }
+
+    public void showMenu() {
+        for (DishType dishType : DishType.values()) {
+            checkDishAmout("" + dishType, getDishesPerType(dishType));
+
+        }
+    }
+
+    void checkDishAmout(String output, ArrayList<String> arrayToPrint) {
+
+        if (!arrayToPrint.isEmpty()) {
+            System.out.println(output);
+            System.out.println(arrayToPrint);
+        } else {
+            System.out.println("no hay " + output);
+        }
+
     }
 }
